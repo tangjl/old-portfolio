@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<!-- on reload, the header text shifts because of fontawesome loading icons...fix this-->
+<!-- fix placement from menu clicked items -->
+<!-- skills section? -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Jordan Tang's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="functions.js"></script>
+    <script src="https://use.fontawesome.com/c100c02528.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico?">
+</head>
+<body>
+    <div class="full-menu">      
+        <ul class="main-nav">
+            <li class="menu-item"><a href="#header-container" class="menu-link" onclick="animateMenu(hamburger)">top</a></li>
+            <li class="menu-item"><a href="#about-me" class="menu-link" onclick="animateMenu(hamburger)">about me</a></li>
+            <li class="menu-item"><a href="#projects" class="menu-link" onclick="animateMenu(hamburger)">projects</a></li>
+            <li class="menu-item"><a href="#resume" class="menu-link" onclick="animateMenu(hamburger)">resume</a></li>
+            <li class="menu-item"><a href="#contact" class="menu-link" onclick="animateMenu(hamburger)">contact</a></li>
+        </ul>
+    </div>
+    <div id="hamburger" class="menu-toggle" onclick="animateMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <div class="row">
+        <div class="col-12" id="header-container">
+            <div class="row" id="header-text-row">
+                <span id="header-text">hell</span>
+                    <div class="ghost">
+                        <div class="eye eye-l"></div>
+                        <div class="eye eye-r"></div>
+                    </div>
+            </div>
+            <div class="row" id="header-subtext-row">
+                <h1>jordan tang</h1>
+            </div>
+            <div class="row" id="icons">
+                <a target="_blank" class="icon-link" href="https://www.linkedin.com/in/jordan-tang-30a444125/"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
+                <div class="middle"><a target="_blank" class="icon-link" href="https://github.com/tangjl/"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></div>
+                <a target="_blank" class="icon-link" href="https://www.instagram.com/shakespls/"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="row down">
+        <i class="fa fa-chevron-down fa-lg" aria-hidden="true"></i>
+    </div>
+    <div class="row">
+        <div class="col-12" id="about-me">
+            <div class="row">
+               <h4>about me</h4>
+            </div>
+            <div class="row">
+                <div class="stick"></div>
+            </div>
+            <div class="row">
+                <img src="images/icon.png" class="image">
+            </div>
+            <div class="row descrip">
+                <div class="col-6">
+                    <p>Hi there and welcome! I'm Jordan Tang, a Computer Science major out of VCU (Go Rams!) with a minor in mathematics set to graduate in May 2017. I have a passion for front-end development but am also a capable full-stack developer. A self-starter, I pick things up quickly with a thirst for knowledge and am a great team player. Currently, I am working with Capital One while still tending to a number of my personal coding related projects/research. I hope to continue down my current career path as a software/front-end developer and am looking to continuously develop myself simultaneously.</p>
+                    <p>Some things about me outside of work: I love basketball (big Knicks fan unfortunately...), art, good food, better music, small dogs, and exploring Richmond in my spare time.</p>
+                    <p>Keep scrolling down to check out some of my works, my resume, and contact information. Thanks
+                        again for visiting and have a great day!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row down-2">
+        <i class="fa fa-chevron-down fa-lg" aria-hidden="true"></i>
+    </div>
+    <div class="row">
+        <div class="col-12" id="projects">
+            <div class="row">
+               <h2>projects</h2>
+            </div>
+            <div class="row descrip-2">
+                <div class="row">
+                    Below you will find some of the projects I've been working on recently. 
+                </div>
+                <div class="row" >
+                    Hover and/or click on each card to find out more.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row card-holder">
+        <div class="col-3">
+            <div class="card">
+                <div class="card-cover">
+                    <h3>nlp lab site</h3>
+                    <p>Designed and developed the website for VCU's NLP lab.</p>
+                    <a target="_blank" href="http://www.nlp.cs.vcu.edu/" class="icon-link-2"><i class="fa fa-link fa-lg" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card-2">
+                <div class="card-cover">
+                    <h3>c.a.r.e. system</h3>
+                    <p>Created a web application that processes clinical records for the purpose of cohort discovery
+                        using Angular 2, Nodejs, Express, and Perl. Note: currently undergoing redesign</p>
+                    <a target="_blank" href="http://github.com/tangjl/CS312" class="icon-link-2"><i class="fa fa-github-square fa-lg" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card-3">
+                <div class="card-cover">
+                    <h3>nlp coding samples</h3>
+                    <p>A collection of NLP-related coding samples written with Perl</p>
+                    <a target="_blank" href="http://github.com/tangjl/nlp" class="icon-link-2"><i class="fa fa-github-square fa-lg" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card-4">
+                <div class="card-cover">
+                    <h3>personal portfolio</h3>
+                    <p>Created a website to be used as a digital resume</p>
+                    <a target="_blank" href="http://github.com/tangjl/tangjl.github.io" class="icon-link-2"><i class="fa fa-github-square fa-lg" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row down">
+        <i class="fa fa-chevron-down fa-lg" aria-hidden="true"></i>
+    </div>
+    <div class="row">
+        <div class="col-12" id="resume">
+            <div class="row">
+               <h4>resume</h4>
+            </div>
+            <div class="row">
+                <div class="stick"></div>
+            </div>
+            <div class="row">
+                <div class="ghost-2">
+                    <a class="icon-link" href="tang_resume_v2.pdf"><i class="fa fa-file-pdf-o fa-4x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row down-2">
+        <i class="fa fa-chevron-down fa-lg" aria-hidden="true"></i>
+    </div>
+    <div class="row">
+        <div class="col-12" id="contact">
+            <div class="row">
+               <h2>contact</h2>
+            </div>
+            <div class="row">
+                <div class="stick-2"></div>
+            </div>
+            <div class="row">
+                <div class="box">
+                    <div class="row">
+                        <form action="https://formspree.io/jordanltang@gmail.com"
+                            method="POST">
+                            <div class="row">
+                                Feel free to leave a message below. 
+                            </div>
+                            <div class="row" >
+                                All fields required for submission.
+                            </div>
+                            <div class="row">
+                                <input class="field" type="text" name="name" placeholder="your name" required>
+                            </div>
+                            <div class="row">
+                                <input class="field" type="email" name="_replyto" placeholder="your email" required>
+                            </div>
+                            <div class="row">
+                                <textarea class="field-2" name="message" placeholder="your message" required></textarea>
+                            </div>
+                            <div class="row">
+                                <button type="submit" class="submit"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>© 2017 jordan tang | all rights reserved</footer>
+</body>
+</html>
